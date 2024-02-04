@@ -10,7 +10,8 @@ function App() {
       <BrowserRouter>
         <NavigationBar />
         <Router />
-      </BrowserRouter>
+    </BrowserRouter>
+
     </>
   );
 }

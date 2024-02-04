@@ -1,0 +1,18 @@
+.banner-principal{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: aliceblue;
+    background: linear-gradient(to bottom, #2738f5, #1e239a, #140b34);
+}
+
+
+
+.txt-btn-banner-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 3%;
+}
+
