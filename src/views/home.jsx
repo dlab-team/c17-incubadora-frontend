@@ -1,9 +1,12 @@
 import React from 'react';
+import BannerPrincipal from '../components/BannerPrincipal/BannerPrincipal';
 
 
 function Home() {
   return (
-    <div>Estas en el home</div>
+    <>
+    <BannerPrincipal />
+    </>
   )
 };
 
