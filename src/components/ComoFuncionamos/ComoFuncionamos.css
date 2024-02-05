@@ -1,0 +1,65 @@
+.como-funcionamos-section{
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    padding: 5%;
+}
+
+
+.cf-txt-1-izq{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    padding: 3%;
+}
+.cf-txt-1-izq h3{
+    margin-bottom: 5%;
+}
+.cf-txt-1-izq h5{
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+.cf-txt-2-der{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 3%;
+    text-align: left;
+}
+
+.cf-txt-2-der img{
+    height: 50%;
+}
+
+.cf-txt-2-der-txt-y-logo{
+    display: flex;
+    height: 30%;
+}
+.cf-txt-2-der-txt-y-logo h1{
+    font-style: italic;
+}
+
+
+
+
+
+
+.cf-txt-2-der-txt-y-logo-bottom{
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    text-align: center;
+}
+
+.cf-txt-2-der-txt-y-logo-bottom img{
+    width: 15%;
+    height: auto;
+
+}
