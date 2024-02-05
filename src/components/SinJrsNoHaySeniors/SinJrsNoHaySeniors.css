@@ -1,0 +1,40 @@
+.banner3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.banner3-container {
+  background-color: #e2f2fe;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+.text-banner3 {
+  font-size: 1.2rem;
+}
+
+.banner3-span {
+  color: #2738f5;
+  font-weight: bold;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid-item {
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 50px;
+}

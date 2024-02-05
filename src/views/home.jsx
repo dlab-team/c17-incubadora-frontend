@@ -1,13 +1,14 @@
-import React from 'react';
-import BannerPrincipal from '../components/BannerPrincipal/BannerPrincipal';
-
+import React from "react";
+import BannerPrincipal from "../components/BannerPrincipal/BannerPrincipal";
+import SinJrsNoHaySeniors from "../components/SinJrsNoHaySeniors/SinJrsNoHaySeniors";
 
 function Home() {
   return (
     <>
-    <BannerPrincipal />
+      <BannerPrincipal />
+      <SinJrsNoHaySeniors />
     </>
-  )
-};
+  );
+}
 
 export default Home;
