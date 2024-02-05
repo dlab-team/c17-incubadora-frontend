@@ -7,7 +7,7 @@ import "./navbar.css";
 
 const NavigationBar = () => {
   return (
-    <Navbar expand="lg" className="navbar-devsafio mb-5" variant="dark">
+    <Navbar expand="lg" className="navbar-devsafio" variant="dark">
       <Container>
         <Navbar.Brand href="#home">
           <img className="logo-nav" alt="Logo" src="DEV-IMAGOTIPO-WHITE-HORIZONTAL.png" />
