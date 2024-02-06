@@ -1,15 +1,44 @@
 .banner-principal {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  color: aliceblue;
-  background: linear-gradient(to bottom, #2732db, #1e239a, #140b34);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	color: aliceblue;
+	background: linear-gradient(to bottom, #2732db, #1e239a, #140b34);
+	padding: 20px;
+	box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
 }
 
 .txt-btn-banner-principal {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  text-align: left;
-  padding: 3%;
+	flex: 1; /* Toma el espacio disponible en la vista de escritorio */
+	text-align: left;
+	padding: 20px;
+	box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+.img-banner-principal img {
+	max-width: 100%;
+	height: auto;
+}
+
+@media screen and (max-width: 768px) {
+	.banner-principal {
+		flex-direction: column; /* Cambia a una sola columna en vista móvil */
+		align-items: stretch;
+	}
+
+	.txt-btn-banner-principal {
+		flex: none; /* Deja de ocupar el espacio disponible en vista móvil */
+		order: 2; /* Cambia el orden en vista móvil */
+	}
+
+	.img-banner-principal {
+		margin-top: 20px; /* Agrega margen superior para separar la imagen del texto */
+		order: 1; /* Cambia el orden en vista móvil */
+	}
+	.img-banner-principal img {
+		margin-right: auto;
+		margin-left: auto;
+		width: 500px;
+	}
 }
