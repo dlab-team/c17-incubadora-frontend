@@ -34,19 +34,19 @@ const Login = () => {
         <Row className="justify-content-md-center mx-md-5">
           <Col xs={12} md={3} className="pt-2">
           
-          <Button className="mx-2" variant="outline-secondary"><AiFillGoogleCircle />  Ingresa con Google</Button>
+          <Button className="mx-2 mx-md-0" variant="outline-secondary"><AiFillGoogleCircle />  Ingresa con Google</Button>
           </Col>
           <Col xs={12} md={3} className="pt-2">
-          <Button className="pt-xs-2" variant="primary"><CiLinkedin />  Ingresa con LinkedIn</Button>
+          <Button className="pt-xs-2 mx-md-0" variant="primary"><CiLinkedin />  Ingresa con LinkedIn</Button>
           </Col>
         </Row>
   
         <Row className="justify-content-md-center mx-md-5">
-          <Col xs={12} md={3} className="pt-2">
+          <Col xs={12} md={3} className="pt-2 mx-md-0">
           <Button className="mx-2" variant="primary"><FaTwitter />  Ingresa con Twitter</Button>
           </Col>
-          <Col xs={12} md={3} className="pt-2">
-          <Button variant="dark"><IoLogoGithub />  Ingresa con GitHub</Button>
+          <Col xs={12} md={3} className="pt-2 mx-md-0">
+          <Button variant="dark"><IoLogoGithub /> Ingresa con GitHub</Button>
           </Col>
         </Row>
       </Container>
