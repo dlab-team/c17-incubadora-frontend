@@ -10,10 +10,11 @@ height: 100%;
 }
 .container-start{
     max-width: 1104px;
-    height: 616px;
+    height: 700px;
     width: 100%;
     border: 10px solid #000000;
     border-radius: 16px;
+    height: 100%;
 
 }
 p{
