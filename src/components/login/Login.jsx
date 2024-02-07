@@ -14,34 +14,38 @@ import './login.css'
 
 const Login = () => {
   return (
-    <section className='bg_body_register pt-5'>
-    <Container className=" bg-white container-start">
-        <Row>
-          <Col><h1 className="pt-5" >Únete a Devsafío</h1></Col>
+    <section className='bg_body_login pt-5'>
+    <Container xs={12} md={9} className=" bg-white container-login">
+        <Row className="justify-content-md-center">
+          <Col xs={12} md={6} ><h1 className="pt-5" >Únete a Devsafío</h1></Col>
         </Row>
   
         <Row className="justify-content-md-center">
-          <Col className="col-9"><p className="parrafo-register pt-5" >Crea tu cuenta profesional en Devsafío para que seas parte de distintas ofertas laborales que tenemos junto a importantes empresas en latinoamérica.</p></Col>
+          <Col xs={12} md={9}><p className="parrafo-login pt-5" >Crea tu cuenta profesional en Devsafío para que seas parte de distintas ofertas laborales que tenemos junto a importantes empresas en latinoamérica.</p></Col>
         </Row>
   
-        <Row>
-          <Col className="pt-4">
+        <Row className="justify-content-md-center">
+          <Col xs={12} className="pt-4">
           
           <Button variant="outline-secondary"><CiMail />  Ingresa con tu mail</Button>
           </Col>
         </Row>
   
-        <Row>
-          <Col className="pt-2">
+        <Row className="justify-content-md-center mx-md-5">
+          <Col xs={12} md={3} className="pt-2">
           
           <Button className="mx-2" variant="outline-secondary"><AiFillGoogleCircle />  Ingresa con Google</Button>
-          <Button variant="primary"><CiLinkedin />  Ingresa con LinkedIn</Button>
+          </Col>
+          <Col xs={12} md={3} className="pt-2">
+          <Button className="pt-xs-2" variant="primary"><CiLinkedin />  Ingresa con LinkedIn</Button>
           </Col>
         </Row>
   
-        <Row>
-          <Col className="pt-2">
+        <Row className="justify-content-md-center mx-md-5">
+          <Col xs={12} md={3} className="pt-2">
           <Button className="mx-2" variant="primary"><FaTwitter />  Ingresa con Twitter</Button>
+          </Col>
+          <Col xs={12} md={3} className="pt-2">
           <Button variant="dark"><IoLogoGithub />  Ingresa con GitHub</Button>
           </Col>
         </Row>
