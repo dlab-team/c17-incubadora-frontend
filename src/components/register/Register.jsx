@@ -22,23 +22,23 @@ const Register = () => {
 
       
 
-      <Row className="justify-content-md-center pt-5">
-        <Col className="col-md-auto "  xs={12} ><p className="text-start " >Nombre:</p> 
+      <Row className="justify-content-md-center pt-5 ">
+        <Col className="col-md-auto"    xs={12} ><p className="text-start text-md-end px-md-2">Nombre:</p> 
         </Col>
         <Col xs={12} md={3}> 
-         <Form.Control type="text" placeholder="" />
+         <Form.Control  type="text" placeholder="" />
           </Col>
 
-          <Col className="col-md-auto " xs={12}  ><p className="text-start" >Apellido:</p> 
+          <Col className="col-md-auto "   xs={12}   ><p className=" text-md-end text-start px-md-2" >Apellido:</p> 
         </Col>
-        <Col xs={12} md={3}> 
+        <Col   xs={12} md={3}> 
          <Form.Control type="text" placeholder="" />
           </Col>
 
       </Row>
 
       <Row className="justify-content-md-center pt-3">
-      <Col className="col-md-auto" xs={12} ><p className="text-start" >Ingresa tu correo:</p> 
+      <Col className="" xs={12} md={3}><p className="text-start px-md-2" >Ingresa tu correo:</p> 
         </Col>
         <Col xs={12} md={6}> 
          <Form.Control type="text" placeholder="" />
@@ -46,9 +46,9 @@ const Register = () => {
       </Row>
 
       <Row className="justify-content-md-center pt-3">
-      <Col className="col-md-auto" xs={12} ><p className="text-start" >Crea tu contraseña:</p> 
+      <Col className="col-md-5" xs={12} ><p className="text-start px-md-1" >Crea tu contraseña:</p> 
         </Col>
-        <Col xs={12} md={6}> 
+        <Col xs={12} md={4}> 
          <Form.Control type="text" placeholder="" />
           </Col>
 
@@ -56,9 +56,9 @@ const Register = () => {
       </Row>
 
       <Row className="justify-content-md-center pt-3">
-      <Col className="col-md-auto" xs={12} ><p className="text-start" >Reingresa tu contraseña:</p> 
+      <Col className="col-md-5" xs={12} ><p className="text-start px-md-1" >Reingresa tu contraseña:</p> 
         </Col>
-        <Col xs={12} md={6}> 
+        <Col xs={12} md={4}> 
          <Form.Control type="text" placeholder="" />
           </Col>
 
