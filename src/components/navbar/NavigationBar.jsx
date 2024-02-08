@@ -15,7 +15,7 @@ const NavigationBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Link to="/" className="text-white m-3 text-decoration-none fw-normal">
+            <Link to="/login" className="text-white m-3 text-decoration-none fw-normal">
               Inicia Sesión
             </Link>
             <Link to="/profile" className="text-white m-3 text-decoration-none fw-normal">
