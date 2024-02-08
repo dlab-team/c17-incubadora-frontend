@@ -1,0 +1,73 @@
+.devsistema-container {
+	background-color: white;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.titulo {
+	color: #522e74; /* Azul morado */
+	font-size: 2em; /* Tamaño del título */
+	margin-bottom: 10px; /* Espaciado inferior */
+	margin: 30px 90px;
+	text-align: left;
+}
+
+.destacado {
+	color: blue; /* Azul claro */
+	font-weight: bold;
+}
+
+.descripcion {
+	font-size: 1em; /* Tamaño del texto de descripción */
+	color: #333; /* Color de texto predeterminado */
+
+	text-align: left;
+	margin: 30px 90px;
+}
+
+.imagen {
+	max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+	height: auto; /* Hace que la altura se ajuste automáticamente según el ancho */
+	margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.bold-text {
+	font-weight: bold;
+	margin: 20px;
+}
+@keyframes clickAnimation {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(0.8);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.agendar-button {
+	background-color: #3498db;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	animation: none; /* Inicialmente, no hay animación */
+	margin: 20px;
+}
+
+.agendar-button:hover {
+	background-color: #2980b9;
+}
+
+.agendar-button.clicked {
+	background-color: #2980b9;
+	animation: clickAnimation 0.6s ease-in-out; /* Aplica la animación al hacer clic */
+}
+@media (max-width: 783px) {
+	.devsistema-container {
+		grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas más pequeñas */
+		grid-template-rows: auto; /* Configura el grid para filas automáticas */
+	}
+}
