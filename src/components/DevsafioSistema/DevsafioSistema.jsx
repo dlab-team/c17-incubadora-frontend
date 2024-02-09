@@ -15,7 +15,7 @@ const DevsafioSistema = () => {
 	return (
 		<>
 			<div className="devsistema-container">
-				<div className="devsistema-text half-width">
+				<div className="devsistema-text ">
 					<h2 className="titulo">DEVsafiamos el sistema</h2>
 					<p className="descripcion">
 						¿Escasez de talento Senior? No te preocupes, en{" "}
@@ -42,7 +42,7 @@ const DevsafioSistema = () => {
 						Agendar
 					</button>
 				</div>
-				<div className="devsistema-form half-width">
+				<div className="devsistema-form ">
 					<FormLanding />
 				</div>
 			</div>

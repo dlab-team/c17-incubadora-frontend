@@ -2,6 +2,8 @@
 	background-color: white;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 .titulo {
@@ -69,5 +71,14 @@
 	.devsistema-container {
 		grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas más pequeñas */
 		grid-template-rows: auto; /* Configura el grid para filas automáticas */
+	}
+	.imagen {
+		max-width: 50%;
+	}
+	.titulo {
+		margin: 5px;
+	}
+	.descripcion {
+		margin: 5px;
 	}
 }
