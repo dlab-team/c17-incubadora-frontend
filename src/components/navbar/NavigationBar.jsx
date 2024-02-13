@@ -9,8 +9,10 @@ const NavigationBar = () => {
   return (
     <Navbar expand="lg" className="navbar-devsafio" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">
-          <img className="logo-nav" alt="Logo" src="DEV-IMAGOTIPO-WHITE-HORIZONTAL.png" />
+        <Navbar.Brand>
+          <Link to={"/"}>
+            <img className="logo-nav" alt="Logo" src="DEV-IMAGOTIPO-WHITE-HORIZONTAL.png" />
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
