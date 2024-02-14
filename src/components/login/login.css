@@ -10,10 +10,10 @@ height: 100%;
 }
 .container-login{
     max-width: 1104px;
-    height: 800px;
     width: 100%;
     border: 10px solid #000000;
     border-radius: 16px;
+    min-height: 75vh;
 
 }
 .parrafo-login{
