@@ -6,6 +6,7 @@ import Error from "../views/Error";
 import Register from "../components/register/Register";
 import ContactUs from "../components/contactUs/ContactUs";
 import Login from "../components/login/Login";
+import Formulario from "../views/Formulario";
 
 const Router = () => {
   return (
@@ -17,6 +18,7 @@ const Router = () => {
         <Route path="/registrate" element={<Register />} />
         <Route path="/contactanos" element={<ContactUs />} />
         <Route path="*" element={<Error />} />
+        <Route path="/formulario" element={<Formulario />} />
       </Routes>
     </>
   );
