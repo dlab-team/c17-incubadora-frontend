@@ -11,6 +11,9 @@ import { LuPhone } from "react-icons/lu";
 import { ImLinkedin } from "react-icons/im";
 import { SiGithub } from "react-icons/si";
 import { LuBookOpenCheck } from "react-icons/lu";
+import { LuCalendarCheck } from "react-icons/lu";
+import { LuContact } from "react-icons/lu";
+import { FaRegTrashAlt } from "react-icons/fa";
 
 
 import './profiles.css'
@@ -149,6 +152,153 @@ function Profiles() {
     height: .5,
     borderColor : '#817E7E'
 }}/>
+
+
+{/* START DISPONIBILIDAD */}
+<Row md={12} className="justify-content-md-center pt-4 pb-md-4">
+
+<Col xs={12} md={5} className="text-lg-start"  >
+<p className="text-sube-cv  text-start " > <LuCalendarCheck  className='mx-3 '  size={'24px'} />  Disponibilidad</p>
+</Col>
+
+
+<Col xs={12} md={5}>
+ <p className="text-experiencia text-md-end" > Full Time</p> 
+ <p className="text-email text-md-end" > Disponibilidad inmediata</p> 
+  </Col>
+
+  <Col xs={12} md={2} className=" text-md-end "  >
+  <a href="" target="_blank"><FiEdit2 style={{ color: "#232323"}} size={'24px'} /></a> 
+  </Col>
+
+</Row>
+
+{/* FIN DISPONIBILIDAD */}
+
+<hr  style={{
+    color: '#000000',
+    backgroundColor: '#000000',
+    height: .5,
+    borderColor : '#817E7E'
+}}/>
+
+{/* START ROL Y SALARIO ACTUAL */}
+<Row md={12} className="justify-content-md-center pt-4 pb-md-4">
+
+<Col xs={12} md={5} className="text-lg-start"  >
+<p className="text-sube-cv  text-start " > <LuContact  className='mx-3 '  size={'24px'} />  Rol y salario actual</p>
+</Col>
+
+
+<Col xs={12} md={5}>
+ <p className="text-experiencia text-md-end" > Fullstack</p> 
+ <p className="text-email text-md-end" > Salario actual 1.000.000 CLP</p> 
+  </Col>
+
+  <Col xs={12} md={2} className=" text-md-end "  >
+  <a href="" target="_blank"><FiEdit2 style={{ color: "#232323"}} size={'24px'} /></a> 
+  </Col>
+
+</Row>
+
+{/* FIN ROL Y SALARIO ACTUAL */}
+
+<hr  style={{
+    color: '#000000',
+    backgroundColor: '#000000',
+    height: .5,
+    borderColor : '#817E7E'
+}}/>
+
+{/* START HABILIDADES */}
+<Row md={12} className="justify-content-md-center pt-4 pb-md-4">
+
+<Col xs={12} md={10} className="text-lg-start pb-4"  >
+<p className="text-habilidades  text-start mx-3  " >  Habilidades</p>
+</Col>
+
+<Col xs={12} md={2} className=" text-md-end "  >
+  <a href="" target="_blank"><FiEdit2 style={{ color: "#232323"}} size={'24px'} /></a> 
+  </Col>
+
+
+
+  <Row md={12} className="justify-content-md-left pb-3">
+  <Col xs={12} md={2}className="jus" >
+ <p className="text-sube-cv text-md-start mx-1 " > Avanzado</p> 
+
+  </Col>
+  <Col xs={12} md={2} className=" text-md-start mx-5 "  >
+  <span class="badge border border-primary font-badge">HTML</span>
+  </Col>
+  </Row>
+
+  <Row md={12} className="justify-content-md-left pb-3">
+  <Col xs={12} md={2}className="jus" >
+ <p className="text-sube-cv text-md-start mx-1 " > Experimentado</p> 
+
+  </Col>
+  <Col xs={12} md={4} className=" text-md-start mx-4 "  >
+  <span class="badge border border-primary font-badge mx-4 ">CSS</span>
+  <span class="badge border border-primary font-badge">JavaScript</span>
+  </Col>
+  </Row>
+
+
+  <Row md={12} className="justify-content-md-left pb-3">
+  <Col xs={12} md={2}className="jus" >
+ <p className="text-sube-cv text-md-start mx-1 " > Principiante</p> 
+
+  </Col>
+  <Col xs={12} md={2} className=" text-md-start mx-5 "  >
+  <span class="badge border border-primary font-badge">Angular</span>
+  </Col>
+  </Row>
+
+
+</Row>
+
+{/* FIN HABILIDADES */}
+
+
+<hr  style={{
+    color: '#000000',
+    backgroundColor: '#000000',
+    height: .5,
+    borderColor : '#817E7E'
+}}/>
+
+{/* START EDUCACION */}
+<Row md={12} className="justify-content-md-left pt-4 pb-md-4">
+
+
+<Col xs={12} md={12} className="text-lg-start pb-3"  >
+<p className="text-habilidades  text-start mx-3  " >  Educación</p>
+</Col>
+
+
+<Col xs={12} md={12}>
+ <p className="text-edu-fech text-start mx-3" > Mar 2021 - Mar 2022</p> 
+ </Col>
+
+ <Col xs={12} md={6}>
+ <p className="text-habilidades  text-start mx-3  " >  Desafío Latam</p>
+ </Col>
+
+  <Col xs={12} md={6} className=" text-md-end "  >
+  <a href="" target="_blank"><FiEdit2 className=" mx-1 " style={{ color: "#232323"}} size={'24px'} /></a> 
+  <a href="" target="_blank"><FaRegTrashAlt style={{ color: "#232323"}} size={'24px'} /></a> 
+  </Col>
+
+  <Col xs={12} md={12}>
+ <p className="text-edu-fech text-start mx-3" > Full Stack Developer</p> 
+ </Col>
+
+</Row>
+
+{/* FIN  EDUCACION*/}
+
+
 
 
 

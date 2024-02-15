@@ -38,3 +38,21 @@
     line-height: 24px;
     font-weight: 600;
 }
+.text-habilidades{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+}
+.font-badge{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #232323;
+}
+.text-edu-fech{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #2738F5 ;
+
+}
