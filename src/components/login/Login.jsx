@@ -7,6 +7,7 @@ import { AiFillGoogleCircle } from "react-icons/ai";
 import { CiLinkedin } from "react-icons/ci";
 import { FaTwitter } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 import "./login.css";
 
@@ -32,7 +33,8 @@ const Login = () => {
         <Row className="justify-content-md-center">
           <Col xs={12} className="pt-4">
             <Button variant="outline-secondary">
-              <CiMail /> Ingresa con tu mail
+              <CiMail className="link-mail" />
+              <Link to="/mail"> Ingresa con tu mail</Link>
             </Button>
           </Col>
         </Row>

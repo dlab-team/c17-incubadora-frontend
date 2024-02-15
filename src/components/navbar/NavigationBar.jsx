@@ -7,7 +7,7 @@ import "./navbar.css";
 
 const NavigationBar = () => {
   return (
-    <Navbar expand="lg" className="navbar-devsafio" variant="dark">
+    <Navbar expand="lg" className="navbar-devsafio sticky-top" variant="dark">
       <Container>
         <Navbar.Brand>
           <Link to={"/"}>

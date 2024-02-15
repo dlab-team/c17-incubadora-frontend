@@ -1,23 +1,44 @@
-
-h1{
-    color: #140B34;
+h1 {
+  color: #140b34;
 }
 
-.bg_body_login{
-    background: rgb(39,56,245);
-background: linear-gradient(180deg, rgba(39,56,245,1) 0%, rgba(30,35,154,1) 50%, rgba(20,11,52,1) 100%) ;
-height: 100%;
+.bg_body_login {
+  background: rgb(39, 56, 245);
+  background: linear-gradient(180deg, rgba(39, 56, 245, 1) 0%, rgba(30, 35, 154, 1) 50%, rgba(20, 11, 52, 1) 100%);
+  height: 100%;
 }
-.container-login{
-    max-width: 1104px;
-    height: 800px;
-    width: 100%;
-    border: 10px solid #000000;
-    border-radius: 16px;
+.container-login {
+  max-width: 1104px;
+  height: 800px;
+  width: 100%;
+  border: 10px solid #000000;
+  border-radius: 16px;
+}
+.parrafo-login {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+}
 
+.container-login-mail {
+  max-width: 800px;
+  height: 600px;
+  width: 100%;
+  border: 2px solid #000000;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
 }
-.parrafo-login{
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: 400;
+
+.link-mail {
+  text-decoration: none;
+  color: black;
+}
+
+.container-h1 {
+  margin-bottom: 4rem;
+}
+
+.login-button {
+  background: rgb(39, 56, 245);
 }

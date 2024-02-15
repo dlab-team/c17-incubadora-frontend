@@ -25,6 +25,13 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.contenedor-completo {
+  display: grid;
+  grid-template-rows: 76px 1fr 76px;
+  min-height: 100vh;
+  align-items: center;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
