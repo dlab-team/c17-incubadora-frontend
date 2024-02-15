@@ -7,6 +7,7 @@ import Register from "../components/register/Register";
 import ContactUs from "../components/contactUs/ContactUs";
 import Login from "../components/login/Login";
 import Formulario from "../views/Formulario";
+import Profiles from "../components/profiles/Profiles";
 
 const Router = () => {
   return (
@@ -16,6 +17,7 @@ const Router = () => {
         <Route path="/profile" element={<Profile />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registrate" element={<Register />} />
+        <Route path="/profiles" element={<Profiles />} />
         <Route path="/contactanos" element={<ContactUs />} />
         <Route path="*" element={<Error />} />
         <Route path="/formulario" element={<Formulario />} />

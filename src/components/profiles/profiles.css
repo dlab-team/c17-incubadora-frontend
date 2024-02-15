@@ -1,0 +1,40 @@
+
+.text-bienvenido{
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 600;
+}
+.text-ejemplocv  {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2738f5;
+}
+.bg-menu-profile{
+    background-color: #E2F2FE;
+}
+.text-sube-cv{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+}
+.text-name_apellido{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;  
+}
+.text-pais{
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 500;   
+}
+.text-email{
+   font-size: 16px;
+   line-height: 24px;
+   font-weight: 500; 
+}
+.text-experiencia{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
