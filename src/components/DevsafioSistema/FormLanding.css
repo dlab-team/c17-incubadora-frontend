@@ -1,0 +1,137 @@
+.formulario-container {
+	background-color: #140b34; /* Azul oscuro */
+	color: #ecf0f1; /* Texto blanco */
+	padding: 20px;
+	width: 90%;
+	margin: 30px auto;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px;
+}
+
+.form-column {
+	flex: 1;
+	margin-bottom: 15px;
+	margin: 10px;
+}
+
+.label-container {
+	/* Clase ficticia para contenedor del label, ajusta según necesidades */
+	text-align: right;
+}
+
+.custom-label {
+	/* Clase ficticia para estilos adicionales del label, ajusta según necesidades */
+	display: block;
+	margin-bottom: 5px;
+	text-align: start;
+	color: #ffffff; /* Color del texto del label */
+}
+
+.custom-input {
+	/* Clase ficticia para estilos adicionales del input, ajusta según necesidades */
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+	border: 1px solid #bdc3c7; /* Color del borde del input */
+	border-radius: 5px;
+	color: black;
+	font-size: 16px;
+	background-color: #e2f2fe;
+}
+.titulo-formulario {
+	font-size: 16px; /* Tamaño de fuente del título */
+	font-weight: bold; /* Texto en negrita */
+	color: #ffffff; /* Color del texto del título */
+	margin-bottom: 30px; /* Espaciado inferior del título */
+}
+.dudas-form {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+	border: 1px solid #bdc3c7;
+	border-radius: 10px;
+}
+
+select {
+	appearance: none;
+	background: url('data:image/svg+xml;utf8,<svg fill="#ecf0f1" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z" /></svg>')
+		no-repeat right 10px center/15px 15px;
+}
+
+input[type="checkbox"] {
+	margin-right: 5px;
+	transform: scale(0.8); /* Escala para hacer más pequeño el checkbox */
+}
+
+button {
+	background-color: #3498db;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+}
+
+button:hover {
+	background-color: #2980b9;
+}
+
+/* Estilos para los checkboxes */
+
+.checkbox-group {
+	margin-bottom: 15px;
+}
+
+.checkbox-item {
+	display: flex;
+	align-items: center;
+	margin-right: 20px; /* Espaciado entre los checkboxes */
+}
+
+input[type="checkbox"] {
+	appearance: none; /* Oculta el diseño predeterminado del checkbox */
+	width: 20px; /* Tamaño del nuevo diseño del checkbox */
+	height: 20px;
+	border: 2px solid #3498db; /* Borde del checkbox */
+	border-radius: 4px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+	background-color: #3498db; /* Color de fondo cuando está marcado */
+}
+.checkbox-label {
+	color: #ffffff; /* Color del texto del label */
+	font-weight: lighter;
+	margin-bottom: 15px;
+}
+.checkbox-item label {
+	color: #ffffff; /* Color del texto del label */
+	font-weight: lighter;
+}
+
+/* Transición suave para el cambio de color de fondo al marcar/desmarcar */
+input[type="checkbox"] {
+	transition: background-color 0.3s;
+}
+@media screen and (max-width: 480px) {
+	.formulario-container {
+		background-color: #140b34; /* Azul oscuro */
+		color: #ecf0f1; /* Texto blanco */
+		padding: 5px;
+		width: 90%;
+		margin: 5px auto;
+		border-radius: 10px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
+}

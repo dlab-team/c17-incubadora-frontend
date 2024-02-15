@@ -2,13 +2,12 @@
   background-color: #2738f5;
   padding: 20px;
   color: white;
-  padding-left: 10rem;
-  padding-right: 10rem;
 }
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  width: 100%;
   align-items: center;
 }
 
@@ -17,20 +16,22 @@
 }
 
 .footer-icons > * {
-  margin-left: 3rem;
+  margin-left: 1rem;
 }
 
 .footer-text {
   margin: 0;
+  font-size: 1.2rem;
+  color: white;
 }
 
 .icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 60px;
-  min-height: 60px;
-  font-size: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  font-size: 20px;
   border-radius: 50%;
   background-color: white;
   color: #2738f5;
@@ -39,16 +40,13 @@
 
 /* tablet */
 @media screen and (max-width: 768px) {
-  .footer-container {
-    margin-left: 10px;
-    margin-right: 10px;
+  .icon {
+    width: 15px;
+  }
+  .footer-text {
+    margin: 0;
+    font-size: 1rem;
   }
 }
 
 /*  celular */
-@media screen and (max-width: 480px) {
-  .footer-container {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-}

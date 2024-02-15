@@ -14,12 +14,33 @@
 	text-align: left;
 	padding: 20px;
 	box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+	width: 80%;
 }
+
+.txt-btn-banner-principal h1{
+	color: white;
+	margin-bottom: 2%;
+}
+
+.txt-btn-banner-principal h5{
+	font-weight: 200;
+	color: white;
+	margin-bottom: 2%;
+}
+
 
 .img-banner-principal img {
 	max-width: 100%;
 	height: auto;
 }
+
+
+.btn-banner-principal button{
+	font-weight: 600;
+	color: #2738f5;
+}
+
+
 
 @media screen and (max-width: 768px) {
 	.banner-principal {
