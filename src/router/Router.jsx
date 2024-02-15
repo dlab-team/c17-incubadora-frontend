@@ -4,6 +4,7 @@ import Home from "../views/home";
 import Profile from "../views/Profile";
 import Error from "../views/Error";
 import Register from "../components/register/Register";
+import Profiles from "../components/profiles/Profiles";
 import ContactUs from "../components/contactUs/ContactUs";
 import Login from "../components/login/Login";
 import Formulario from "../views/Formulario";
@@ -18,6 +19,8 @@ const Router = () => {
       <NavigationBar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/profile" element={<Profile />} />
+
         <Route path="/profile" element={<Profile />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registrate" element={<Register />} />

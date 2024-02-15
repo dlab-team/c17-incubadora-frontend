@@ -35,9 +35,19 @@ h1 {
   color: black;
 }
 
-.container-h1 {
-  margin-bottom: 4rem;
+
+.bg_body_login{
+    background: rgb(39,56,245);
+background: linear-gradient(180deg, rgba(39,56,245,1) 0%, rgba(30,35,154,1) 50%, rgba(20,11,52,1) 100%) ;
+height: 100%;
 }
+.container-login{
+    max-width: 1104px;
+    width: 100%;
+    border: 10px solid #000000;
+    border-radius: 16px;
+    min-height: 75vh;
+
 
 .login-button {
   background: rgb(39, 56, 245);

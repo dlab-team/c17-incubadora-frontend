@@ -11,9 +11,11 @@ import { LuPhone } from "react-icons/lu";
 import { ImLinkedin } from "react-icons/im";
 import { SiGithub } from "react-icons/si";
 import { LuBookOpenCheck } from "react-icons/lu";
+
 import { LuCalendarCheck } from "react-icons/lu";
 import { LuContact } from "react-icons/lu";
 import { FaRegTrashAlt } from "react-icons/fa";
+
 
 
 import './profiles.css'
@@ -152,6 +154,7 @@ function Profiles() {
     height: .5,
     borderColor : '#817E7E'
 }}/>
+
 
 
 {/* START DISPONIBILIDAD */}
@@ -297,6 +300,7 @@ function Profiles() {
 </Row>
 
 {/* FIN  EDUCACION*/}
+
 
 
 
