@@ -11,6 +11,7 @@ import { LuPhone } from "react-icons/lu";
 import { ImLinkedin } from "react-icons/im";
 import { SiGithub } from "react-icons/si";
 import { LuBookOpenCheck } from "react-icons/lu";
+import { LuCalendarCheck } from "react-icons/lu";
 
 
 import './profiles.css'
@@ -150,6 +151,27 @@ function Profiles() {
     borderColor : '#817E7E'
 }}/>
 
+
+{/* START DISPONIBILIDAD */}
+<Row md={12} className="justify-content-md-center pt-4 pb-md-4">
+
+<Col xs={12} md={5} className="text-lg-start"  >
+<p className="text-sube-cv  text-start " > <LuCalendarCheck  className='mx-3 '  size={'24px'} />  Disponibilidad</p>
+</Col>
+
+
+<Col xs={12} md={5}>
+ <p className="text-experiencia text-md-end" > Full Time</p> 
+ <p className="text-email text-md-end" > Disponibilidad inmediata</p> 
+  </Col>
+
+  <Col xs={12} md={2} className=" text-md-end "  >
+  <a href="" target="_blank"><FiEdit2 style={{ color: "#232323"}} size={'24px'} /></a> 
+  </Col>
+
+</Row>
+
+{/* FIN DISPONIBILIDAD */}
 
 
 
