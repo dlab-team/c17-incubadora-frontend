@@ -15,12 +15,13 @@ import { LuCalendarCheck } from "react-icons/lu";
 import { LuContact } from "react-icons/lu";
 import { FaRegTrashAlt } from "react-icons/fa";
 
+import Footer from "../footer/Footer";
 
 import './profiles.css'
 
 function Profiles() {
   return (
-
+    <>
     <Container fluid="md"  className=" bg-white ">
 
 <Row md={3} className="justify-content-md-left flex">
@@ -269,7 +270,7 @@ function Profiles() {
 }}/>
 
 {/* START EDUCACION */}
-<Row md={12} className="justify-content-md-left pt-4 pb-md-4">
+<Row md={12} className="justify-content-md-left pt-4 pb-md-5">
 
 
 <Col xs={12} md={12} className="text-lg-start pb-3"  >
@@ -286,7 +287,7 @@ function Profiles() {
  </Col>
 
   <Col xs={12} md={6} className=" text-md-end "  >
-  <a href="" target="_blank"><FiEdit2 className=" mx-1 " style={{ color: "#232323"}} size={'24px'} /></a> 
+  <a href="" target="_blank"><FiEdit2 className=" mx-5 " style={{ color: "#232323"}} size={'24px'} /></a> 
   <a href="" target="_blank"><FaRegTrashAlt style={{ color: "#232323"}} size={'24px'} /></a> 
   </Col>
 
@@ -308,12 +309,12 @@ function Profiles() {
   </Row>
 
 
-  
+
   </Container>
+  <Footer />
 
 
-
-
+  </>
   )
 };
 
