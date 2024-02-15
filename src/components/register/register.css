@@ -5,7 +5,7 @@ h1 {
 .bg_body_register {
   background: rgb(39, 56, 245);
   background: linear-gradient(180deg, rgba(39, 56, 245, 1) 0%, rgba(30, 35, 154, 1) 50%, rgba(20, 11, 52, 1) 100%);
-  min-height: 100vh;
+  height: 100%;
 }
 .container-start {
   max-width: 1104px;
@@ -13,8 +13,8 @@ h1 {
   width: 100%;
   border: 10px solid #000000;
   border-radius: 16px;
+  height: 100%;
 }
-
 p {
   font-size: 24px;
   line-height: 36px;
