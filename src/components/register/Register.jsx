@@ -65,11 +65,11 @@ const Register = () => {
 	};
 
 	return (
-		<section className="bg_body_register pt-5">
-			<Container className=" bg-white container-start">
+		<section className="bg_body_register ">
+			<Container className=" container-start form-container">
 				<Row className="justify-content-md-center">
-					<Col xs={12} md={3}>
-						<h1 className="pt-5 ">
+					<Col xs={12} md={6}>
+						<h1 className="form-title">
 							{formularioCreado
 								? "¡Formulario enviado correctamente!"
 								: "Regístrate"}
@@ -78,92 +78,89 @@ const Register = () => {
 				</Row>
 
 				<Form onSubmit={handleSubmit}>
-					<Row className="justify-content-md-center pt-5 ">
-						<Col className="col-md-auto" xs={12}>
-							<p className="text-start text-md-end px-md-2">
+					<Row className="mb-3">
+						<Col xs={12} md={6}>
+							<Form.Label className="form-label">
 								Nombre:
-							</p>
-						</Col>
-						<Col xs={12} md={3}>
+							</Form.Label>
 							<Form.Control
 								type="text"
 								placeholder=""
 								name="nombre"
 								value={formData.nombre}
 								onChange={handleChange}
+								className="form-input"
 							/>
 						</Col>
 
-						<Col className="col-md-auto " xs={12}>
-							<p className=" text-md-end text-start px-md-2">
+						<Col xs={12} md={6}>
+							<Form.Label className="form-label">
 								Apellido:
-							</p>
-						</Col>
-						<Col xs={12} md={3}>
+							</Form.Label>
 							<Form.Control
 								type="text"
 								placeholder=""
 								name="apellido"
 								value={formData.apellido}
 								onChange={handleChange}
+								className="form-input"
 							/>
 						</Col>
 					</Row>
 
-					<Row className="justify-content-md-center pt-3">
-						<Col className="" xs={12} md={3}>
-							<p className="text-start px-md-2">
+					<Row className="mb-3">
+						<Col xs={12}>
+							<Form.Label className="form-label">
 								Ingresa tu correo:
-							</p>
-						</Col>
-						<Col xs={12} md={6}>
+							</Form.Label>
 							<Form.Control
 								type="text"
 								placeholder=""
 								name="correo"
 								value={formData.correo}
 								onChange={handleChange}
+								className="form-input"
 							/>
 						</Col>
 					</Row>
 
-					<Row className="justify-content-md-center pt-3">
-						<Col className="col-md-5" xs={12}>
-							<p className="text-start px-md-1">
+					<Row className="mb-3">
+						<Row xs={12} md={6}>
+							<Form.Label className="form-label">
 								Crea tu contraseña:
-							</p>
-						</Col>
-						<Col xs={12} md={4}>
+							</Form.Label>
 							<Form.Control
 								type="password"
 								placeholder=""
 								name="psw"
 								value={formData.psw}
 								onChange={handleChange}
+								className="form-input"
 							/>
-						</Col>
-					</Row>
+						</Row>
 
-					<Row className="justify-content-md-center pt-3">
-						<Col className="col-md-5" xs={12}>
-							<p className="text-start px-md-1">
+						<Row xs={12} md={6}>
+							<Form.Label className="form-label">
 								Reingresa tu contraseña:
-							</p>
-						</Col>
-						<Col xs={12} md={4}>
+							</Form.Label>
 							<Form.Control
 								type="password"
 								placeholder=""
 								name="confirmPsw"
 								value={formData.confirmPsw}
 								onChange={handleChange}
+								className="form-input"
 							/>
-						</Col>
+						</Row>
 					</Row>
 
-					<Row className="justify-content-md-center pt-3">
-						<Col xs={12} md={9} className="text-center">
-							<Button variant="primary" type="submit">
+					<Row className="justify-content-md-center">
+						<Col xs={12} md={6} className="text-center">
+							<Button
+								variant="primary"
+								type="submit"
+								className="form-button"
+							>
 								Registrarse
 							</Button>
 						</Col>
