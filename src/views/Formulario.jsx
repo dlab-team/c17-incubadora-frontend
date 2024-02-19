@@ -1,13 +1,14 @@
-import React from 'react'
-import FormTexto from '../components/FormTexto/FormTexto'
+import React from "react";
+import FormTexto from "../components/FormTexto/FormTexto";
+import FormInfoPersonal from "../components/FormInfoPersonal/FormInfoPersonal";
 
 const Formulario = () => {
-  return (
-    <>
-    <FormTexto />
-    
-    </>
-  )
-}
+	return (
+		<>
+			<FormTexto />
+			<FormInfoPersonal />
+		</>
+	);
+};
 
-export default Formulario
+export default Formulario;
