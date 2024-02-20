@@ -39,7 +39,6 @@ input[type="checkbox"] {
 .form-flex {
 	display: flex;
 	margin: 10px;
-	justify-content: center;
 }
 .button-form-personal:hover {
 	background-color: #2980b9;
