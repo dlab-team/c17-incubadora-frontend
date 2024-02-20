@@ -13,6 +13,7 @@ const Formulario = () => {
       <PerfilLaboral />
       <FormExperienciaTrabajo />
       <FormTipoTrabajo />
+      <button type="submit">Submit</button>
     </>
   );
 };
