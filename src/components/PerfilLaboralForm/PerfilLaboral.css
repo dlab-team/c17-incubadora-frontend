@@ -1,0 +1,124 @@
+.container-laboral {
+  width: 80%;
+  text-align: left;
+  padding: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 3%;
+}
+
+.perfil-texto {
+  font-size: 13pt;
+}
+
+.titulo-laboral {
+  text-align: left;
+  margin-left: 10%;
+}
+
+.container-perfil {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.text {
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+}
+
+.fila1,
+.fila2,
+.fila3 {
+  width: 300px;
+  margin: 50px;
+}
+
+.number {
+  font-size: 1.5rem;
+  margin: 5px;
+}
+
+.plus,
+.minus {
+  background-color: #e2f2fe;
+  color: black;
+}
+
+.fila-titulo {
+  margin-bottom: 100px;
+  text-decoration: underline;
+}
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  /* Estilos para tablet */
+  .container-laboral {
+    width: 80%;
+  }
+
+  .titulo-laboral {
+    margin-left: 10%;
+  }
+
+  .container-perfil {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .fila1,
+  .fila2,
+  .fila3 {
+    margin: 30px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  /* Estilos para pantallas pequeñas de laptop */
+  .container-laboral {
+    width: 70%;
+  }
+
+  .titulo-laboral {
+    margin-left: 10%;
+  }
+
+  .container-perfil {
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .fila1,
+  .fila2,
+  .fila3 {
+    margin: 40px 0;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  /* Estilos para móvil */
+  .container-laboral {
+    width: 90%;
+  }
+
+  .titulo-laboral {
+    margin-left: 5%;
+  }
+
+  .container-perfil {
+    grid-template-columns: auto;
+  }
+
+  .fila1,
+  .fila2,
+  .fila3 {
+    margin: 15px 0;
+  }
+}
