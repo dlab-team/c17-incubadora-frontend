@@ -10,12 +10,9 @@ const Formulario = () => {
       <FormTexto />
       <FormInfoPersonal />
       <PerfilLaboral />
-    <FormExperienciaTrabajo />
+      <FormExperienciaTrabajo />
     </>
   );
-
-
-
-
+};
 
 export default Formulario;
