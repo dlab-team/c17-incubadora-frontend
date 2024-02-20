@@ -1,0 +1,52 @@
+.formulario-per {
+	width: 80%;
+	background-color: rgb(255, 255, 255);
+	text-align: left;
+	color: rgb(0, 0, 0);
+	padding: 5px;
+	margin: 10px auto;
+	border-radius: 10px;
+}
+.form-grid {
+	display: grid;
+	gap: 15px;
+	margin: 35px auto;
+}
+
+.form-title {
+	color: #333;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.input-celeste,
+.select-celeste {
+	width: 100%;
+	padding: 8px;
+	box-sizing: border-box;
+	border: 1px solid #4e7bf3;
+	border-radius: 5px;
+	background-color: #eaf3ff;
+	color: #333;
+	margin-bottom: 15px;
+}
+
+.select-celeste:focus,
+.input-celeste:focus {
+	outline: none;
+	border-color: #2557a7;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+	background-color: #4e7bf3;
+	color: #fff;
+	padding: 10px 15px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #2557a7;
+}
