@@ -112,10 +112,10 @@ const PerfilLaboral = () => {
           <br />
           <br />
           <br />
-          <h5>
-            <strong>Indícanos tus conocimientos a Nivel 1, 2 o 3 </strong>
-          </h5>
         </p>
+        <h1 className="titulo-conocimientos">
+          <strong>Indícanos tus conocimientos a Nivel 1, 2 o 3 </strong>
+        </h1>
       </div>
       <div>
         <div className="container-perfil">

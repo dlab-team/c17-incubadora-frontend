@@ -1,20 +1,20 @@
-.box-txt-form{
-    width: 80%;
-    background-color: rgb(42, 17, 96);
-    text-align: left;
-    color: white;
-    padding: 5%;
-    margin: 3% auto;
-    border-radius: 3%;
+.box-txt-form {
+  width: 80%;
+  background-color: rgb(42, 17, 96);
+  text-align: left;
+  color: white;
+  padding: 5%;
+  margin: 3% auto;
+  border-radius: 20px;
 }
-.box-txt-form p{
-    font-size: 13pt;
-    color: white;
-    line-height: 1.5;
+.box-txt-form p {
+  font-size: 13pt;
+  color: white;
+  line-height: 1.5;
 }
-.box-txt-form h1{
-    font-size: 20pt;
-    color: white;
-    font-weight: 600;
-    margin-bottom: 5%;
+.box-txt-form h1 {
+  font-size: 20pt;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 5%;
 }

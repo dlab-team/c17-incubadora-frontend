@@ -60,6 +60,14 @@
   margin-bottom: 100px;
   text-decoration: underline;
 }
+
+.titulo-conocimientos {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: left;
+  line-height: 48px;
+}
+
 @media only screen and (min-width: 600px) and (max-width: 900px) {
   /* Estilos para tablet */
   .container-laboral {
