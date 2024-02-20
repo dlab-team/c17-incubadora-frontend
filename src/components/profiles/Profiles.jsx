@@ -24,10 +24,11 @@ function Profiles() {
   return (
 
     <Container fluid="md"  className=" bg-white ">
+      
 
 <Row md={3} className="justify-content-md-left flex">
 
-<Col xs={12} md={3} className="bg-menu-profile"  >
+<Col xs={12} md={2} className="bg-menu-profile"  >
     <Nav defaultActiveKey="/home" className="flex-column align-content-md-start" style={{ width: window === false ? 250 : 60 }}>
     <Nav.Link href="/home">Active</Nav.Link>
     <Nav.Link eventKey="link-1">Link</Nav.Link>
@@ -47,15 +48,15 @@ function Profiles() {
 
   {/* START SECCION SUBE TU CV */}
   <Row md={3} className="justify-content-md-center pt-5 pb-md-4 ">
-  <Col xs={12} md={5}>
+  <Col xs={6} md={5}>
  <p className="text-sube-cv text-start " > <LuFileInput  className='mx-3'  size={'24px'} />  Sube tu CV</p>
   </Col>
 
-  <Col xs={12} md={5}>
+  <Col xs={3} md={5}>
  <p className="text-ejemplocv text-md-end" >  ejemploCV.pdf</p> 
   </Col>
 
-  <Col xs={12} md={2} className="text-md-end"  >
+  <Col xs={3} md={2} className="text-md-end"  >
   <a href="" target="_blank"><FiEdit2 style={{ color: "#232323"}} size={'24px'} /></a> 
   </Col>
 
@@ -72,7 +73,7 @@ function Profiles() {
 
 {/* START SECCION NOMBRE APELLIDO */}
 <Row md={12} className="justify-content-md-center pt-5 pb-md-5 ">
-<Col sm={12} md={3} className="text-lg-start "  >
+<Col xs={4} md={3} className="text-lg-start "  >
 <Avatar
     name="John Doe"
     size="100"
@@ -83,12 +84,12 @@ function Profiles() {
 
 </Col>
 
-<Col xs={12} md={7}>
+<Col xs={5} md={7}>
  <p className="text-name_apellido text-start " > Nombre Apellido</p> 
  <p className="text-pais  text-start " > País</p> 
   </Col>
 
-  <Col xs={12} md={2} className="text-md-end "  >
+  <Col xs={3} md={2} className="text-md-end "  >
   <a href="" target="_blank"><FiEdit2 style={{ color: "#232323"}} size={'24px'} /></a> 
   </Col>
 </Row>
@@ -98,7 +99,7 @@ function Profiles() {
 
 
 {/* START SECCION INFO CORREO Y RRSS */}
-<Row md={12} className="justify-content-md-center pb-md-4">
+<Row  md={12} className="justify-content-md-center pb-md-4">
 
 <Col xs={12} md={4} className="text-lg-start"  >
 <p className="text-email  text-start " > <MdOutlineEmail  className='mx-3 '  size={'24px'} />  ejemplo@correo.com</p>
@@ -135,12 +136,12 @@ function Profiles() {
 </Col>
 
 
-<Col xs={12} md={5}>
+<Col xs={9} md={5}>
  <p className="text-experiencia text-md-end" > 1 a 3 años de experiencia</p> 
  <p className="text-email text-md-end" > Nivel de Inglés avanzado</p> 
   </Col>
 
-  <Col xs={12} md={2} className=" text-md-end "  >
+  <Col xs={3} md={2} className=" text-md-end "  >
   <a href="" target="_blank"><FiEdit2 style={{ color: "#232323"}} size={'24px'} /></a> 
   </Col>
 
@@ -165,12 +166,12 @@ function Profiles() {
 </Col>
 
 
-<Col xs={12} md={5}>
+<Col xs={9} md={5}>
  <p className="text-experiencia text-md-end" > Full Time</p> 
  <p className="text-email text-md-end" > Disponibilidad inmediata</p> 
   </Col>
 
-  <Col xs={12} md={2} className=" text-md-end "  >
+  <Col xs={3} md={2} className=" text-md-end "  >
   <a href="" target="_blank"><FiEdit2 style={{ color: "#232323"}} size={'24px'} /></a> 
   </Col>
 
@@ -193,12 +194,12 @@ function Profiles() {
 </Col>
 
 
-<Col xs={12} md={5}>
+<Col xs={9} md={5}>
  <p className="text-experiencia text-md-end" > Fullstack</p> 
  <p className="text-email text-md-end" > Salario actual 1.000.000 CLP</p> 
   </Col>
 
-  <Col xs={12} md={2} className=" text-md-end "  >
+  <Col xs={3} md={2} className=" text-md-end "  >
   <a href="" target="_blank"><FiEdit2 style={{ color: "#232323"}} size={'24px'} /></a> 
   </Col>
 
@@ -216,32 +217,32 @@ function Profiles() {
 {/* START HABILIDADES */}
 <Row md={12} className="justify-content-md-center pt-4 pb-md-4">
 
-<Col xs={12} md={10} className="text-lg-start pb-4"  >
+<Col xs={9} md={10} className="text-lg-start pb-4"  >
 <p className="text-habilidades  text-start mx-3  " >  Habilidades</p>
 </Col>
 
-<Col xs={12} md={2} className=" text-md-end "  >
+<Col xs={3} md={2} className=" text-md-end "  >
   <a href="" target="_blank"><FiEdit2 style={{ color: "#232323"}} size={'24px'} /></a> 
   </Col>
 
 
 
   <Row md={12} className="justify-content-md-left pb-3">
-  <Col xs={12} md={2}className="jus" >
+  <Col xs={6} md={2}className="jus" >
  <p className="text-sube-cv text-md-start mx-1 " > Avanzado</p> 
 
   </Col>
-  <Col xs={12} md={2} className=" text-md-start mx-5 "  >
+  <Col xs={3} md={2} className=" text-md-start mx-5 "  >
   <span class="badge border border-primary font-badge">HTML</span>
   </Col>
   </Row>
 
   <Row md={12} className="justify-content-md-left pb-3">
-  <Col xs={12} md={2}className="jus" >
+  <Col xs={6} md={2}className="jus" >
  <p className="text-sube-cv text-md-start mx-1 " > Experimentado</p> 
 
   </Col>
-  <Col xs={12} md={4} className=" text-md-start mx-4 "  >
+  <Col xs={3} md={4} className=" text-md-start mx-4 "  >
   <span class="badge border border-primary font-badge mx-4 ">CSS</span>
   <span class="badge border border-primary font-badge">JavaScript</span>
   </Col>
@@ -249,11 +250,11 @@ function Profiles() {
 
 
   <Row md={12} className="justify-content-md-left pb-3">
-  <Col xs={12} md={2}className="jus" >
+  <Col xs={6} md={2}className="jus" >
  <p className="text-sube-cv text-md-start mx-1 " > Principiante</p> 
 
   </Col>
-  <Col xs={12} md={2} className=" text-md-start mx-5 "  >
+  <Col xs={3} md={2} className=" text-md-start mx-5 "  >
   <span class="badge border border-primary font-badge">Angular</span>
   </Col>
   </Row>
@@ -272,7 +273,7 @@ function Profiles() {
 }}/>
 
 {/* START EDUCACION */}
-<Row md={12} className="justify-content-md-left pt-4 pb-md-4">
+<Row md={12} className="justify-content-md-left pt-4 pb-md-5">
 
 
 <Col xs={12} md={12} className="text-lg-start pb-3"  >
@@ -280,20 +281,20 @@ function Profiles() {
 </Col>
 
 
-<Col xs={12} md={12}>
- <p className="text-edu-fech text-start mx-3" > Mar 2021 - Mar 2022</p> 
+<Col xs={6} md={12}>
+ <p className="text-edu-fech text-lg-start mx-3" > Mar 2021 - Mar 2022</p> 
  </Col>
 
- <Col xs={12} md={6}>
+ <Col xs={8} md={6}>
  <p className="text-habilidades  text-start mx-3  " >  Desafío Latam</p>
  </Col>
 
-  <Col xs={12} md={6} className=" text-md-end "  >
-  <a href="" target="_blank"><FiEdit2 className=" mx-1 " style={{ color: "#232323"}} size={'24px'} /></a> 
+  <Col xs={4} md={6} className=" text-md-end "  >
+  <a href="" target="_blank"><FiEdit2 className=" mx-4 " style={{ color: "#232323"}} size={'24px'} /></a> 
   <a href="" target="_blank"><FaRegTrashAlt style={{ color: "#232323"}} size={'24px'} /></a> 
   </Col>
 
-  <Col xs={12} md={12}>
+  <Col xs={6} md={12}>
  <p className="text-edu-fech text-start mx-3" > Full Stack Developer</p> 
  </Col>
 
