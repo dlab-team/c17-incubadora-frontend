@@ -1,0 +1,150 @@
+.formulario-personal {
+	width: 80%;
+	background-color: rgb(255, 255, 255);
+	text-align: left;
+	color: rgb(0, 0, 0);
+	padding: 5%;
+	margin: 3% auto;
+	border-radius: 3%;
+}
+.form-rows {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+	flex-wrap: wrap;
+	margin: 10px auto;
+}
+
+.form-column {
+	flex: 1;
+	margin-bottom: 15px;
+	margin: 10px;
+}
+input[type="checkbox"] {
+	margin-right: 5px;
+	transform: scale(0.8); /* Escala para hacer más pequeño el checkbox */
+}
+
+.button-form-personal {
+	background-color: #3498db;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+	margin: 20px auto;
+}
+.form-flex {
+	display: flex;
+	margin: 10px;
+}
+.button-form-personal:hover {
+	background-color: #2980b9;
+}
+
+/* Estilos para los checkboxes */
+
+.checkbox-group {
+	margin-bottom: 15px;
+}
+
+.checkbox-item {
+	display: flex;
+	align-items: center;
+	margin-right: 20px; /* Espaciado entre los checkboxes */
+}
+
+input[type="checkbox"] {
+	appearance: none; /* Oculta el diseño predeterminado del checkbox */
+	width: 20px; /* Tamaño del nuevo diseño del checkbox */
+	height: 20px;
+	border: 2px solid #3498db; /* Borde del checkbox */
+	border-radius: 4px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+	background-color: #3498db; /* Color de fondo cuando está marcado */
+}
+.checkbox-label {
+	color: #ffffff; /* Color del texto del label */
+	font-weight: lighter;
+	margin-bottom: 15px;
+}
+.checkbox-item label {
+	color: #ffffff; /* Color del texto del label */
+	font-weight: lighter;
+}
+
+/* Transición suave para el cambio de color de fondo al marcar/desmarcar */
+input[type="checkbox"] {
+	transition: background-color 0.3s;
+}
+.select-label {
+	margin: auto;
+	max-width: 500px;
+	display: flex;
+	flex-direction: column;
+	font-size: 16px;
+}
+.label-form {
+	margin: 20px;
+}
+.custom-select {
+	width: 100%;
+	padding: 10px;
+	margin-top: 8px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background-color: #f8f8f8;
+	color: #333;
+	cursor: pointer;
+}
+.cargo-title {
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+}
+.form-tittle {
+	font-weight: bold;
+	color: #333; /* Color del texto */
+	font-size: 24px; /* Tamaño del texto */
+	margin-bottom: 20px; /* Espacio inferior */
+}
+.custom-select option {
+	font-size: 16px;
+	background-color: #f8f8f8;
+	color: #333;
+}
+
+.form-grid {
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: space-around;
+	gap: 15px;
+	margin: 35px auto;
+}
+
+.input-celeste {
+	padding: 8px;
+	width: 300px;
+	box-sizing: border-box;
+	border: 1px solid #4e7bf3; /* Color del borde celeste */
+	border-radius: 5px;
+	background-color: #eaf3ff; /* Fondo celeste claro */
+	color: #333; /* Color del texto */
+}
+
+.input-celeste:focus {
+	outline: none; /* Elimina el contorno al hacer foco */
+	border-color: #2557a7; /* Cambia el color del borde al hacer foco */
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Agrega una sombra al hacer foco */
+}
+@media (max-width: 760px) {
+	.form-grid {
+		grid-template-columns: auto; /* Cambia a una sola columna cuando el ancho es 760px o menos */
+	}
+}
