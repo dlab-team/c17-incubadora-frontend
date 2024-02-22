@@ -1,13 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-
+import axios from "axios";
 import "./register.css";
 
 const Register = () => {
+	useEffect(() => {
+		const fetchData = async () => {
+			try {
+				const response = await axios.get("URL_DE_TU_API");
+				setData(response.data);
+			} catch (error) {
+				console.error("Error al obtener los datos:", error);
+			}
+		};
+
+		fetchData();
+	}, []);
+
 	const [formData, setFormData] = useState({
 		nombre: "",
 		apellido: "",
