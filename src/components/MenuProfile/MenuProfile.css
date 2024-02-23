@@ -1,0 +1,66 @@
+.bg-menu-profile{
+    background-color: #E2F2FE;
+    min-height: 100vh;
+    border-radius: 0px 40px 0px 0px;
+}
+
+
+.menu {
+    width: 200px;
+    background-color: #333;
+    padding: 20px 0;
+}
+.logo {
+    text-align: center;
+    margin-bottom: 70px;
+    padding-top: 60px;
+}
+.logo img {
+    width: 80px;
+    height: auto;
+}
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: #2738F5;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.menu-item:hover {
+    background-color: #2738F5;
+    color: #fff;
+}
+.menu-icon {
+    margin-right: 16px;
+}
+.text-menu{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #2738F5;
+    text-decoration: none;
+    border: 2px solid #2738F5;
+    border-radius: 24px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn:hover {
+    background-color: #2738F5;
+    color: #fff;
+}
+.icon-job {
+    margin-right: 10px;
+}
+.text-job{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
