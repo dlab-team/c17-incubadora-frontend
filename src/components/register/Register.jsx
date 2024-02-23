@@ -4,29 +4,18 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import axios from "axios";
+
 import "./register.css";
+import devsafioApi from "../../devsafioApi";
 
 const Register = () => {
-	useEffect(() => {
-		const fetchData = async () => {
-			try {
-				const response = await axios.get("URL_DE_TU_API");
-				setData(response.data);
-			} catch (error) {
-				console.error("Error al obtener los datos:", error);
-			}
-		};
-
-		fetchData();
-	}, []);
-
+	const [data, setData] = useState(null);
 	const [formData, setFormData] = useState({
-		nombre: "",
-		apellido: "",
-		correo: "",
-		psw: "",
-		confirmPsw: "",
+		name: "",
+		last_name: "",
+		email: "",
+		password: "",
+		confirmPassword: "",
 	});
 
 	const [formularioCreado, setFormularioCreado] = useState(false);
@@ -45,17 +34,17 @@ const Register = () => {
 		// Validación básica
 
 		if (
-			formData.nombre.trim() === "" ||
-			formData.apellido.trim() === "" ||
-			formData.correo.trim() === "" ||
-			formData.psw.trim() === "" ||
-			formData.confirmPsw.trim() === ""
+			formData.name.trim() === "" ||
+			formData.last_name.trim() === "" ||
+			formData.email.trim() === "" ||
+			formData.password.trim() === "" ||
+			formData.confirmPassword.trim() === ""
 		) {
 			alert("Todos los campos son obligatorios");
 			return;
 		}
 
-		if (formData.psw !== formData.confirmPsw) {
+		if (formData.password !== formData.confirmPassword) {
 			alert("Las contraseñas no coinciden");
 			return;
 		}
@@ -64,13 +53,25 @@ const Register = () => {
 		console.log("Datos del formulario:", formData);
 		// Lógica para enviar los datos al servidor
 
+		const fetchData = async () => {
+			try {
+				const response = await devsafioApi.post("/users/", formData);
+
+				console.log(response);
+			} catch (error) {
+				console.error("Error al obtener los datos:", error);
+			}
+		};
+
+		fetchData();
+
 		// Limpiar el formulario después del envío
 		setFormData({
-			nombre: "",
-			apellido: "",
-			correo: "",
-			psw: "",
-			confirmPsw: "",
+			name: "",
+			last_name: "",
+			email: "",
+			password: "",
+			confirmPassword: "",
 		});
 
 		// Actualizar el estado para indicar que el formulario fue creado correctamente
@@ -94,13 +95,13 @@ const Register = () => {
 					<Row className="mb-3">
 						<Col xs={12} md={6}>
 							<Form.Label className="form-label">
-								Nombre:
+								name:
 							</Form.Label>
 							<Form.Control
 								type="text"
 								placeholder=""
-								name="nombre"
-								value={formData.nombre}
+								name="name"
+								value={formData.name}
 								onChange={handleChange}
 								className="form-input"
 							/>
@@ -108,13 +109,13 @@ const Register = () => {
 
 						<Col xs={12} md={6}>
 							<Form.Label className="form-label">
-								Apellido:
+								last_name:
 							</Form.Label>
 							<Form.Control
 								type="text"
 								placeholder=""
-								name="apellido"
-								value={formData.apellido}
+								name="last_name"
+								value={formData.last_name}
 								onChange={handleChange}
 								className="form-input"
 							/>
@@ -124,13 +125,13 @@ const Register = () => {
 					<Row className="mb-3">
 						<Col xs={12}>
 							<Form.Label className="form-label">
-								Ingresa tu correo:
+								Ingresa tu email:
 							</Form.Label>
 							<Form.Control
 								type="text"
 								placeholder=""
-								name="correo"
-								value={formData.correo}
+								name="email"
+								value={formData.email}
 								onChange={handleChange}
 								className="form-input"
 							/>
@@ -145,8 +146,8 @@ const Register = () => {
 							<Form.Control
 								type="password"
 								placeholder=""
-								name="psw"
-								value={formData.psw}
+								name="password"
+								value={formData.password}
 								onChange={handleChange}
 								className="form-input"
 							/>
@@ -159,8 +160,8 @@ const Register = () => {
 							<Form.Control
 								type="password"
 								placeholder=""
-								name="confirmPsw"
-								value={formData.confirmPsw}
+								name="confirmPassword"
+								value={formData.confirmPassword}
 								onChange={handleChange}
 								className="form-input"
 							/>
